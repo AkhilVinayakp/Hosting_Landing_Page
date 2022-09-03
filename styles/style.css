@@ -71,7 +71,7 @@ nav ul {
 .left-section {
     display: flex;
     flex-direction: column;
-    width: 50%vw;
+    width: 50vw;
 }
 
 h1 {
@@ -422,4 +422,147 @@ footer {
 
 .footer-menu-links img:hover {
     cursor: pointer;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 428px) {
+   header{
+    padding: 1em;
+   }
+   nav ul {
+        display: none;
+    }
+    /* sections */
+    .container {
+        padding: 1em;
+    }
+    .sector-1 {
+        flex-direction: column;
+    }
+    .left-section {
+        width: 100%;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+    p {
+        width: 90%;
+    }
+    .right-section {
+        order: -1;
+    }
+    .right-section img {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .sector-middle .left-section {
+        order: -1;
+    }
+    .left-section img {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .sector-middle {
+        margin-top: 1em;
+        padding: 1em;
+        flex-direction: column;
+    }
+    .sector-middle .right-section {
+        align-items: center;
+    }
+    .technical_support {
+        margin-top: 1em;
+        margin-left: 0em;
+        padding: 1em;
+        flex-direction: column;
+    }
+    .services {
+        margin: 9px;
+    }
+    .services_heading {
+        flex-direction: column;
+        padding: 0.2em;
+        align-items: center;
+    }
+    .s-info p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services_lists {
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+    }
+    .sevices_item {
+        width: 90%;
+        align-items: center;
+        margin-top: 5em;
+    }
+    .pricing {
+        width: 100%;
+        margin-top: 10em;
+        text-align: center;
+        margin-left: 0px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .price_cards {
+        flex-direction: column;
+        padding: 12px;
+        align-items: center;
+        gap:4em;
+    }
+    .price_card {
+        width: 90%;
+        margin: 1px;
+        height: auto;
+    }
+    .feedbacks{
+        margin: 1em;
+        margin-top: 3em;
+    }
+    .feedback_header h2{
+        text-align: center;
+    }
+    .feedbacks {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .feedbacks_body {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 3em;
+    }
+    .feedback_item {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        padding:1em;
+    }
+    .register_banner {
+        margin: 0;
+        margin-top: 4em;
+        width: 90%;
+        height: auto;
+        padding: 1em;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .banner-heading {
+        width: 90%;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .footer-heading {
+        width: 90%;
+    }
+    .footer-heading .tagline {
+        width: 100%;
+    }
 }
